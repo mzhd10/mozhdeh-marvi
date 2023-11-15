@@ -43,7 +43,7 @@ const Items = ({ projectItems }) => {
             <Rating />
             <p className="project-description">{description}</p>
 
-            <a href="" className="link">
+            <a href="https://github.com/mzhd10" className="link">
               See on Github
               <FontAwesomeIcon className="link-icon" icon={faArrowRight} />
             </a>
