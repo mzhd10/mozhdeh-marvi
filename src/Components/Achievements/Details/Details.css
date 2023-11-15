@@ -1,0 +1,58 @@
+.achievement-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.achievement-modal-content {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  background-color: var(--bg-light);
+  padding: 4.5rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.achievement-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+.modal-date,
+.modal-title {
+  color: var(--danger-color);
+}
+
+@media (max-width: 1024px) {
+  .achievement-modal-content {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievement-modal-content {
+    max-width: 90%;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-modal-content {
+    max-width: 95%;
+    padding: 2rem 1rem 1rem;
+  }
+}

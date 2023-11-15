@@ -1,0 +1,73 @@
+.contact {
+  padding: 5rem 0;
+  background-color: var(--bg-light);
+}
+.contact-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact-title hr {
+  width: 180px;
+  padding: 0 30px;
+  margin: 0 auto;
+  border: 1px solid var(--bg-dark);
+}
+
+.contact-title span {
+  color: var(--danger-color);
+}
+
+.contact-form {
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 70px;
+}
+
+.contact-content {
+  align-self: start;
+}
+
+.contact h3 {
+  font-size: 1.4rem;
+}
+
+.contact p {
+  font-size: 20px;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 70px 280px;
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 20px;
+}
+
+.contact-wrapper > *:first-child {
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-content: start;
+}
+
+.contact-wrapper span {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--body-font);
+}
+
+.contact-wrapper h3,
+.contact-wrapper a {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.heading h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-family: var(--second-font);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}

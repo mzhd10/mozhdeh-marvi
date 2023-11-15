@@ -1,0 +1,213 @@
+.skills {
+  padding-top: 5rem;
+}
+
+.skill-title {
+  text-align: start;
+  font-size: 1.5rem;
+}
+
+.skill-title span {
+  color: var(--danger-color);
+}
+
+.skill-title hr {
+  width: 80px;
+  padding: 0 74px;
+  border: 1px solid var(--bg-dark);
+  margin-left: 0.1rem;
+}
+.skills-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.skill-content h1 > span {
+  font-size: 3rem;
+  font-family: var(--second-font);
+}
+.skill-content p {
+  font-size: 20px;
+}
+
+.progress-line {
+  height: 10px;
+  width: 100%;
+  background-color: var(--card-color);
+  position: relative;
+  transform: scaleX(1);
+  border-radius: 10px;
+}
+
+.progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: var(--bg-dark);
+  animation: progressBar 4s cubic-bezier(0, 0, 0, 1) forwards;
+}
+
+.progress-line.js span {
+  width: 85%;
+}
+.progress-line.react span {
+  width: 80%;
+}
+.progress-line.boot span {
+  width: 95%;
+}
+.progress-line.hc span {
+  width: 97%;
+}
+.progress-line.java span {
+  width: 65%;
+}
+.progress-line span::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  right: -10px;
+  height: 0;
+  width: 0;
+  border-left: 0px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 13px solid #000;
+  transform: translateX(50deg);
+  opacity: 0;
+  animation: percentage 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+  position: absolute;
+  top: -35px;
+  right: -30px;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: percentage 0.5s 1.5s linear forwards;
+}
+
+.progress-line.js span::after {
+  content: "85%";
+}
+.progress-line.react span::after {
+  content: "80%";
+}
+.progress-line.boot span::after {
+  content: "95%";
+}
+.progress-line.hc span::after {
+  content: "98%";
+}
+.progress-line.java span::after {
+  content: "65%";
+}
+
+.skill-bottom {
+  position: relative;
+  background: url("../../../public/images/bg-dark.jpg") no-repeat center
+    center/cover;
+  color: #fff;
+  margin-top: 5rem;
+}
+
+.skill-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.flex h3 {
+  font-size: 2rem;
+  mix-blend-mode: screen;
+  position: relative;
+}
+.flex h3::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: var(--bg-light);
+  bottom: 11px;
+  left: 100%;
+  opacity: 1;
+  animation: blink 0.9s infinite;
+}
+
+.flex a {
+  position: relative;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  mix-blend-mode: screen;
+  font-family: var(--second-font);
+}
+.flex a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  border: 1.8px solid #fff;
+  transform: scaleX(0);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transform-origin: right center;
+}
+
+.flex a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition-duration: 0.4s;
+}
+@keyframes progressBar {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes percentage {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .flex h3 {
+    font-style: 1.5rem;
+  }
+}
