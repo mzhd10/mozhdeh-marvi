@@ -26,7 +26,7 @@ section {
 .home-title h1 {
   font-size: 5rem;
   font-weight: 700;
-  margin-left: -4px;
+  margin-left: 0.1rem;
   transform: translateY(500px);
   animation: slideUp 0.8s ease forwards 0.5s;
 }
@@ -207,7 +207,7 @@ section {
 }
 .content a {
   position: relative;
-  background-color: var(--bg-color);
+  background-color: var(--bg-dark);
   color: var(--bg-light);
   padding: 10px 20px;
   font-size: 14px;
