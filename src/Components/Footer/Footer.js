@@ -32,7 +32,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <ul>
+        <ul className="bottom-links">
           <li>
             <a href="#home">Home</a>
           </li>
