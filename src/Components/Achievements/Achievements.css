@@ -60,8 +60,4 @@
 .link-icon {
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
-  .mySwiper {
-    margin: 0 40px;
-  }
-}
+
