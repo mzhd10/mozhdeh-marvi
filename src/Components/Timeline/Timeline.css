@@ -102,4 +102,10 @@ timeline-icon {
   .timeline-subtitle {
     font-size: 0.8rem;
   }
+  .timeline-tabs {
+    font-size: 0.876rem;
+  }
+  hr {
+    width: 90px;
+  }
 }
