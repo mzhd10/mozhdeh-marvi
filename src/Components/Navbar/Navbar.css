@@ -11,6 +11,24 @@
   transition: top 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
 }
+.mzhd {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--bg-light);
+  z-index: 1000;
+  margin-left: -12px;
+}
+
+.back {
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-dark);
+  position: relative;
+  left: 2.4rem;
+  z-index: 0;
+  border-radius: 100%;
+  margin-right: 12px;
+}
 
 .navbar.scrolled {
   box-shadow: 0 2px 4px var(--bg-light);
@@ -42,7 +60,7 @@
   font-size: 1.1rem;
 }
 .logo-inner {
-  margin: auto 0px auto 10px;
+  margin: auto 0px auto 20px;
 }
 .front {
   color: var(--danger-color);
