@@ -85,3 +85,10 @@ timeline-icon {
   background-color: var(--bg-dark);
   transform: translate(6px, -7px);
 }
+@media screen and (max-width: 768px) {
+  .timeline-sections {
+    grid-template-columns: 1fr;
+    margin: 0 12px;
+  }
+ 
+}
