@@ -40,4 +40,7 @@ li {
     flex-direction: column-reverse;
     text-align: center;
   }
+  .bottom-links{
+    font-size:12px;
+  }
 }
