@@ -1,6 +1,6 @@
 import React from "react";
 import "./Timeline.css";
-import Reveal from "../Reveal/Reveal";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGraduationCap,
@@ -11,7 +11,7 @@ import {
 const Timeline = () => {
   return (
     <div>
-      <Reveal>
+
         <section id="timeline" className="timeline-sections">
           <div>
             <div className="timeline-container">
@@ -149,7 +149,7 @@ const Timeline = () => {
             </div>
           </div>
         </section>
-      </Reveal>
+    
     </div>
   );
 };
