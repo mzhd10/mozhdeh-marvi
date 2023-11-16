@@ -79,7 +79,8 @@ export default function Navbar() {
           <div className="navbar-wrapper">
             <div>
               <a href="index.html" className="logo">
-                <img src="./images/logo.jpg" alt="Mozhdeh Marvi" />
+                <div className="back m"></div>
+                <span className="mzhd ">M</span>
                 <div className="logo-inner">
                   <span className="top">Mozhdeh Marvi</span>
                   <br />
