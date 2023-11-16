@@ -99,8 +99,8 @@
   }
   .about-img img,
   .about-img::after {
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
   }
   .about-content {
     justify-content: center;
