@@ -24,7 +24,7 @@ const Footer = () => {
             <a href="https://twitter.com/withmzhd">
               <FontAwesomeIcon icon={faXTwitter} />
             </a>
-            <a href="https://www.instagram.com/mzhd.codes">
+            <a href="https://www.instagram.com/devmzhd">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a href="https://www.linkedin.com/in/mozhdeh-marvi-7885a0294/">
