@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import { useState } from "react";
 import "./ContactForm.css";
 
@@ -24,25 +25,20 @@ const ContactForm = () => {
     }
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    setTouchedFields(["name", "email", "message"]);
-
-    if (
-      enteredName.trim() === "" ||
-      enteredEmail.trim() === "" ||
-      enteredMessage.trim() === ""
-    ) {
-      return;
-    }
-
-    const formData = {
-      name: enteredName,
-      email: enteredEmail,
-      message: enteredMessage,
-    };
-    console.log(formData);
+    emailjs
+      .sendForm(
+        "service_tge3b0r",
+        "template_vpcrm3o",
+        e.target,
+        "KnzIMkv19I64PY2KE"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
 
     setEnteredName("");
     setEnteredEmail("");
