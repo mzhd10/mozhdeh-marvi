@@ -29,11 +29,11 @@ const Contact = () => {
                 <br />
                 <br />
               </p>
-              <div className="contact-wrapper">
-                <FontAwesomeIcon icon={faPhoneVolume} beat size="2xl" />
-                <span>Call me</span>
-                <h3>+93796161221</h3>
-              </div>
+              // <div className="contact-wrapper">
+              //   <FontAwesomeIcon icon={faPhoneVolume} beat size="2xl" />
+              //   <span>Call me</span>
+              //   <h3>+93796161221</h3>
+              // </div>
               <div className="contact-wrapper">
                 <FontAwesomeIcon icon={faEnvelope} beat size="2xl" />
                 <span>Email</span>
